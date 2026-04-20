@@ -207,10 +207,6 @@ bar {
 #lockscrean
 bindsym $mod+shift+p  exec i3lock
 
-
-#authentication applet
-exec --no-startup-id lxqt-policykit-agent
-
 #window title bar colors
 client.focused          #18A1F2 #000000 #ffffff #2e9ef4 #285577
 client.unfocused        #000000 #000000 #888888 #292d2e #222222
@@ -222,13 +218,10 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 bindsym $mod+shift+s exec systemctl suspend
 
 #Tap click enable(1)/disable(0)
-exec xinput set-prop "XXXX0000:00 04F3:31BE Touchpad" "libinput Tapping Enabled" 1
+exec xinput set-prop "YOUR TOUCHPAD NAME" "libinput Tapping Enabled" 1
 
 #Natural scrolling enable(1)/disable(0)
-exec xinput set-prop "XXXX0000:00 04F3:31BE Touchpad" "libinput Natural Scrolling Enabled" 1
-
-#Policykit agent for user authontication 
-exec --no-startup-id lxpolkit
+exec xinput set-prop "YOUR TOUCHPAD NAME" "libinput Natural Scrolling Enabled" 1
 
 
 #----------------------------------------------------------------------------------------------------
